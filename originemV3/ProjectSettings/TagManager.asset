@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SkyboxCamera
+  - Stick
+  - NoneStick
+  - Cube
+  - 1
+  - 2
+  - 3
+  - 4
+  - StarsBreakPoint
+  - Star
   layers:
   - Default
   - TransparentFX
