@@ -6,6 +6,7 @@ public class StarControl : MonoBehaviour
 {
     GameObject[] target;
 
+
     void Start()
     {
         Time.timeScale = 1;
