@@ -38,7 +38,7 @@ public class MenuManager : MonoBehaviour
         if (i == 200)
         {
             fullScreenStar.transform.DOScale(50, 0.9f).OnComplete(
-                () => fullScreenStar.transform.DOMove(new Vector3(1.27f, 3.18f, 5000), 0.1f).OnComplete(
+                () => fullScreenStar.transform.DOMove(new Vector3(50f, 50f, 500f), 0.1f).OnComplete(
                 () => cam.transform.DOMove(new Vector3(1.12f, 3.88f, 3.8f), 0.7f).OnComplete(
                 () => panel.SetActive(true))));
         }

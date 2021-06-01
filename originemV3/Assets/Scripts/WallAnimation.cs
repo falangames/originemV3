@@ -21,6 +21,7 @@ public class WallAnimation : MonoBehaviour
             if (StickControl.Instance.star != 0)
             {
                 StickControl.Instance.star -= 1;
+                Destroy(gameObject);
             }
         }
     }

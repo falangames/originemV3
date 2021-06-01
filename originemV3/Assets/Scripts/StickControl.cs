@@ -19,7 +19,7 @@ public class StickControl : MonoBehaviour
 
     public Text InGameScoreText;
     public Text GameOverScoreText;
-    //AdmobManager[] admobManager;
+    AdmobManager[] admobManager;
 
     public float score;
 
@@ -32,7 +32,7 @@ public class StickControl : MonoBehaviour
     bool isAudioMuted = false;
 
     public GameObject SoundButton;
-    // Start is called before the first frame update
+
     void Start()
     {
         if (Instance == null)
@@ -43,7 +43,7 @@ public class StickControl : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        //admobManager = Object.FindObjectsOfType<AdmobManager>();
+        admobManager = Object.FindObjectsOfType<AdmobManager>();
     }
     float currentRotation;
     public void OnClick_LeftButton()
@@ -116,20 +116,20 @@ public class StickControl : MonoBehaviour
         transform.position = pos;
         score = pos.z;
     }
-    /*private GameObject[] wall1;
+    private GameObject[] wall1;
     private GameObject[] wall2;
     private GameObject[] wall3;
-    private GameObject[] wall4;*/
+    private GameObject[] wall4;
 
 
     public void OnClick_ReviveButton()
     {
-        //admobManager[0].ShowRewardVideo();
+        admobManager[0].ShowRewardVideo();
     }
 
 
 
-    /*public void Revive()
+    public void Revive()
     {
         wall1 = GameObject.FindGameObjectsWithTag("1");
         wall2 = GameObject.FindGameObjectsWithTag("2");
@@ -162,5 +162,5 @@ public class StickControl : MonoBehaviour
             //Instantiate(copyWall4, wall4[i].transform.position, Quaternion.identity);
             Destroy(wall4[i]);
         }
-    }*/
+    }
 }
